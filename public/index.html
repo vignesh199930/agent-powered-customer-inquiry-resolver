@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Inquiry Resolver</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="header">
+                <h1>Customer Inquiry Resolver</h1>
+                <p>
+                    Submit your inquiry and our intelligent agent will
+                    identify the topic and provide a relevant response.
+                </p>
+            </div>
+
+            <div class="form-group">
+                <label for="inquiry">Your Inquiry</label>
+
+                <textarea
+                    id="inquiry"
+                    placeholder="Example: I am unable to login to my account..."
+                    rows="6"
+                ></textarea>
+            </div>
+
+            <button id="submitBtn">
+                Ask Agent
+            </button>
+
+            <div id="loading" class="loading hidden">
+                Processing your inquiry...
+            </div>
+
+            <div id="responseContainer" class="response-container hidden">
+
+                <h2>Agent Response</h2>
+
+                <div class="topic">
+                    <strong>Detected Topic:</strong>
+                    <span id="topic"></span>
+                </div>
+
+                <div class="response">
+                    <strong>Response:</strong>
+                    <p id="response"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
