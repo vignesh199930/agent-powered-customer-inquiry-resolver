@@ -8,7 +8,7 @@ This stack was selected because it is lightweight, easy to set up, and suitable 
 
 ## 2. Agent Architecture
 
-The application follows a simple programmatic agent workflow:
+The application follows a simple got programmatic agent workflow:
 
 Customer Inquiry
 → Inquiry Classification
